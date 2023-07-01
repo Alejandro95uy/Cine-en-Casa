@@ -1,0 +1,141 @@
+
+/* --------- Cortina --------------*/
+
+.cortina{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0px;
+	background-color: gray;
+	z-index: 10;
+	transition: height 1s;
+	opacity: 0.6;
+
+}
+
+/* ----------- Formulario -----------------*/
+
+form {
+	max-height: 500px;
+	min-height: 150px;
+	float: left;
+	position: fixed;
+	transition: 1s;
+	background-color: white;
+	z-index: 15;
+}
+
+.formLogin{
+	top: -450px;
+	width: 35%;
+	left: 33.3%
+}
+
+.formRegistro{
+	top: -600px;
+	width: 47%;
+	left: 25%;
+}
+
+/* --------------- Título ------------------- */
+
+form > h1 {
+	margin: 0px;
+	margin-top: 30px;
+	margin-bottom: 5%;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+/* ------------- Cruz de cerrar ------------- */
+
+form > h1 > div {
+	position: relative;
+	top: -30px;
+	float: right;
+	font-size: 0.9em;
+	font-family:  monospace;
+	height: 35px; 
+	width: 35px;
+	cursor: pointer;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+form > h1 > div:hover {
+	background-color: gray;
+	color: white;
+}
+
+/* ----------- Campos login y registro --------------- */
+
+form > div{
+	float: left;
+	width: 90%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5%;
+}
+
+form > div > label{
+	float: left;
+	width: auto;
+	max-width: 45%;
+	text-align: left;
+	font-size: 13pt;
+}
+
+.formLogin > div > label {
+	margin-left: 10%;
+
+}
+.formRegistro > div > label {
+	margin-left: 5%;
+}
+
+form > div > input {
+	float: right;
+	margin-right: 5%;
+	width: 45%;
+}
+
+.formLogin > div > input {
+	margin-right: 10%;
+
+}
+.formRegistro > div > input {
+	margin-right: 5%;
+}
+form > div > a{
+	text-decoration: none;
+	color: black;
+}
+
+/* -------------- Botones ------------------ */
+
+form > div > button {
+	margin-top: 30px;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 5%;
+}
+
+/* ------------ Requerido ----------------*/
+
+.requerido{
+	color: red;
+	font-size: 8pt;
+	float: left;
+}
+form>div:nth-last-child(2)>.requerido{
+	margin-left: 5%; 
+}
+
+/* --------- Registrar Span ------------*/
+
+.spanRegistro{
+	cursor: pointer;
+}

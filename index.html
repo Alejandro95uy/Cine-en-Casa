@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<title>Cine en casa</title>
+	
+	<meta charset="utf-8">
+	<meta name="Keywords" content="peliculas, movie, estrenos" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" > 
+
+	<!-- Hojas de Estilo -->
+
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<!-- Fuentes de Google -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!--  JavaSript -->
+
+
+</head>
+<body>
+
+	<!-- ********************* Incicio sesion **************** -->
+	<form class="formLogin form" onsubmit="">
+
+		<h1> Inicio sesión <div onclick="cerrarForm('formLogin')"> X </div> </h1>
+
+		<div> 
+			<label for="usuario"> Usuario: </label>
+			<input type="text" name="usuario" placeholder="Correo Electrónico"> 
+		</div>
+
+
+		<div> 
+			<label for="cotrsenia"> Contraseña: </label>
+			<input type="password" name="cotrsenia" placeholder="Contraseña"> 
+		</div>
+		
+
+		<div>
+			<a href="#"> ¿Olvidaste tu contraeña? </a>
+			<br><br>
+			<span class="spanRegistro" onclick="mostrarForm('formRegistro')"> Regitrarse</span> 
+		</div>
+		
+
+		<div> 
+			<button> Iniciar Sesión </button>	
+			<button onclick="cerrarForm();"> Cerrar </button>
+		</div>
+			
+	</form>
+
+	<!-- ********************* Registro ************************** -->
+	<form class="formRegistro form"  onsubmit="false">
+	
+		<h1> Registro <div onclick="cerrarForm()"> X </div> </h1>
+
+		<div>
+			<label for="nombre"> <span class="requerido" >*</span>Nombre: </label>
+			<input type="text" name="nombre" placeholder="Nombre">
+		</div>
+
+		<div>
+			<label for="correo"> <span class="requerido" >*</span>Correo Electrónico: </label>
+			<input type="email" name="correo" placeholder="Correo Electrónico" autocomplete="email">
+		</div>
+
+		<div>
+			<label for="pass1"> <span class="requerido" >*</span>Contraseña Nueva: </label>
+			<input type="password" name="pass1" placeholder="Contraseña Nueva">
+		</div>
+
+		<div>
+			<label for="pass2"> <span class="requerido" >*</span>Repetir Contraseña: </label>
+			<input type="password" name="pass2" placeholder="Contraseña Nueva">
+		</div>
+
+		<div>
+			<label for="fecha"> Fecha de nacimiento: </label>
+			<input type="date" name="fecha">
+		</div>
+
+		<div>
+			<label for="pais"> Pais: </label>
+			<input type="text" name="" autocomplete="country-name">
+		</div>
+
+		<div>
+			<span class="requerido"> *Campos Requeridos </span>
+		</div>
+
+		<div> 
+			<button> Enviar </button>	
+			<button onclick="cerrarForm();"> Cerrar </button> 
+		</div>
+
+	</form>
+
+	<div class="cortina" onclick="cerrarForm();">
+	</div>
+
+	<header>
+		
+	<!-- ********************** Estrenos ******************* -->
+		<div class="container" >
+			
+			<div class="premiere">
+				<div>
+					<div ><img src="image/thor_el_mundo.jpg"></div>
+					<div ><img src="image/coco.png"></div>
+					<div ><img src="image/bella_bestia.jpg"></div>
+					<div ><img src="image/jumanji.jpg"></div>
+				</div>
+			</div>
+
+		</div>
+		
+	<!-- *************** Centro ********************** -->
+		<div class="container" >
+			
+			<img src="image/movie.png" >
+			<h1> Cine en Casa </h1>
+
+		</div>
+        
+    <!-- **************** Login + Buscador ************* -->
+		<div class="container" >
+	        
+	        <div class="login">
+	            <div onclick="mostrarForm('formLogin')" > Inicio Sesión </div>
+	            <div onclick="mostrarForm('formRegistro');" > Regitrarse </div>
+
+	        </div>
+
+	       
+	       <div class="search">
+	       		<button autofocus><img src="image/search_black.png"></button>
+	       		<input type="search" name="buscar" placeholder="Buscar..." >
+	       		
+
+	       </div>
+
+	    </div>
+
+	</header>
+
+	
+	<!-- ******** Menú de navegación ******** -->
+	<nav>
+		<ul>
+			<li onclick="location.href='index.html'" ><a href="index.html"> 
+				<span class="fas fa-home">  </span> Inicio </a></li>
+			<li onclick="location.href='#'" ><a href="#" > Peliculas </a>
+				<ul>
+					<li><a href="#"> Acción </a></li>
+					<li><a href="#"> Animación </a></li>
+					<li><a href="#"> Ciencia ficción </a></li>
+					<li><a href="#"> Cine independiente </a></li>
+					<li><a href="#"> Comedia </a></li>
+					<li><a href="#"> Drama </a></li>
+					<li><a href="#"> Fantasía </a></li>
+					<li><a href="#"> Histórico </a></li>
+					<li><a href="#"> Musical </a></li>
+					<li><a href="#"> Romance </a></li>
+					<li><a href="#"> Suspense </a></li>
+					<li><a href="#"> Terror </a></li>
+					<li><a href="#"> Thriller </a></li>
+				</ul>
+			</li>
+			<li onclick="location.href='#'" ><a href="#"> FAQ</a></li>
+			<li onclick="location.href='#'" ><a href="#"> Contactos</a></li>
+		</ul>
+	</nav>
+
+	<!-- ******** Contenido principal ********* -->
+	<main>
+		
+		<!-- ***************** Panel Lateral Filtros -->
+
+		<div class="filtro">
+			
+					<h3> Filtros </h3>
+
+			<label for="Precios" > Precios </label>
+			<div class="rango">
+				<input type="range" min="1" max="100" name="Precios">
+			</div>
+				<span> 1 </span>
+
+			<label> Calificación </label>
+
+		<span class="far fa-star" onclick="cambio(0);" onmouseover="pintar(0);"onmouseleave="despintar();" >	
+			</span>
+		<span class="far fa-star" onclick="cambio(1);" onmouseover="pintar(1);"onmouseleave="despintar();" >
+			</span>
+		<span class="far fa-star" onclick="cambio(2);" onmouseover="pintar(2);"onmouseleave="despintar();" >
+			</span>
+		<span class="far fa-star" onclick="cambio(3);" onmouseover="pintar(3);"onmouseleave="despintar();" >
+			</span>
+		<span class="far fa-star" onclick="cambio(4);" onmouseover="pintar(4);"onmouseleave="despintar();">	
+			</span>
+
+		<label> Genero </label>
+
+			<span class="etiqueta" genero="accion" onclick="marcarItem(0);" > 
+				#Acción 
+			</span>
+			<span class="etiqueta" genero="animacion" onclick="marcarItem(1);" >
+				#Animación 
+			</span>
+			<span class="etiqueta" genero="ciencia ficcion" onclick="marcarItem(2);" >
+				#Ciencia ficción
+			</span>
+			<span class="etiqueta" genero="terror" onclick="marcarItem(3);" >
+				#Terror
+			</span>
+			<span class="etiqueta" genero="cine independiente" onclick="marcarItem(4);" >
+				#Cine independiente 
+			</span>
+			<span class="etiqueta" genero="comedia" onclick="marcarItem(5);" >
+				#Comedia
+			</span>
+			<span class="etiqueta" genero="drama" onclick="marcarItem(6);" > 
+				#Drama
+			</span>
+			<span class="etiqueta" genero="fantasia" onclick="marcarItem(7);" >
+				#Fantasía 
+			</span>
+			<span class="etiqueta" genero="historico" onclick="marcarItem(8);" >
+				#Histórico 
+			</span>
+			<span class="etiqueta" genero="musical" onclick="marcarItem(9);" > 
+				#Musical
+			</span>
+			<span class="etiqueta" genero="romance" onclick="marcarItem(10);" >
+				#Romance 
+			</span>
+			<span class="etiqueta" genero="suspense" onclick="marcarItem(11);" > 
+				#Suspense 
+			</span>
+			<span class="etiqueta" genero="thriller" onclick="marcarItem(12);" >
+				#Thriller 
+			</span>
+
+			<label> Año </label>
+			<select id="anio"> 
+				<option disabled selected> Seleccione un año</option>
+			</select>
+
+			<label> País </label>
+			<select id="pais"> <option disabled selected> Seleccione un pais</option> </select>
+
+
+		</div>
+
+		<!-- *************** Peliculas ********** -->
+		<div class="principal">
+
+			<div class="botones">
+				<div class="esquina_l item"	onclick="itemMarcado(0);"> Más Populares </div>
+				<div class="item"	onclick="itemMarcado(1)"> Estrenos </div>
+				<div class="esquina_r item"	onclick="itemMarcado(2);"> Próximamente </div>
+			</div>
+
+			<div class="fas fa-angle-up">  </div>
+
+			<div> <!-- contenedor X6 -->
+
+			<div class="contenedor" >
+				<div> 
+					<div class="peliculas">
+						<img src="image/coco.png">
+						<div class="titulo"> <h4 style=""> Coco </h4> </div>
+					</div >
+					<div class="descripcion">
+						<div> <b>Título original:</b> Coco</div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+
+			<div class="contenedor" >
+				<div>
+					<div class="peliculas">
+						<img src="image/gnomos.jpg">
+						<div class="titulo"> <h4 style=""> Solo en casa Coco Jumanji Todo En uno Hola Mundo </h4> </div>
+					</div >
+					<div class="descripcion">
+						<div> <b>Título original:</b> Solo en Casa</div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedor" >
+				<div>
+					<div class="peliculas">
+						<img src="image/jumanji.jpg">
+						<h4 style=""> Jumanji </h4>
+					</div >
+					<div class="descripcion descripcion_x">
+						<div> <b>Título original:</b> Jumanji</div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+
+			<div class="contenedor" >
+				<div>
+					<div class="peliculas">
+						<img src="image/proyecto_rampage.jpg">
+						<h4 style=""> Proyecto Rampage </h4>
+					</div >
+					<div class="descripcion">
+						<div> <b>Título original:</b> Coco</div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedor" >
+				<div>
+					<div class="peliculas">
+						<img src="image/bella_bestia.jpg">
+						<h4 style=""> La Bella y La Bestia </h4>
+					</div >
+					<div class="descripcion">
+						<div> <b>Título original:</b> Bella y la bestia </div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+			<div class="contenedor" >
+				<div>
+					<div class="peliculas">
+						<img src="image/thor_el_mundo.jpg">
+						<h4 style=""> Thor El mundo Oscuro </h4>
+					</div >
+					<div class="descripcion descripcion_x">
+						<div> <b>Título original:</b> Coco</div>
+						<div> <b>Año:</b> 2017</div>
+						<div> <b>País:</b> Estados Unidos</div>
+						<div> <b>Género:</b> <span class="genero">#Animación</span> <span class="genero">#Fantasía</span> <span class="genero"> #Comedia </span> <span class="genero"> #Musical</span></div>
+						<div> <b>Sinopsis:</b> Miguel es un joven con el sueño de convertirse en leyenda de la música a pesar de la prohibición de su familia. Su pasión le llevará a adentrarse en la "Tierra de los Muertos" para conocer su verdadero legado familiar.</div>
+										
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- final de contenedor X6 -->
+
+			<!-- Final principal -->
+			<div class="fas fa-angle-up">  </div>
+		</div>
+
+
+	</main>
+
+
+
+	<!-- ******** Pié de página ********* -->
+	<!-- <footer>
+		
+	</footer> -->
+</body>
+
+
+	<script type="text/javascript" src="js/funciones.js">	</script>
+<script type="text/javascript">
+	var calificacion=-1;
+	var est;
+	anios();
+	itemMarcado(0);
+</script>
+
+</html>
+

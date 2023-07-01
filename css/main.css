@@ -1,0 +1,169 @@
+main{
+	width: 90%;
+    box-shadow:3px 3px 5px black;
+    height: auto;
+    margin-top: 8px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+/* ----------- planel filtro -------------*/
+.filtro {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	border: 1px solid;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.filtro > *{
+	display: block;
+	margin-top: 5px;
+}
+
+.filtro > label {
+	background-color: #2999A5;
+}
+
+.etiqueta {
+	display: inline-block;
+	border-color: grey;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 25px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: default;
+}
+
+.marcado {
+	color: #4E4438;
+	background-color: gray;
+}
+
+.filtro > select {
+	width: 100%;
+	text-align-last: center;
+}
+
+.rango {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/* --------------- Cuadro Principal ---------------*/
+
+.principal{
+	float: left;
+	width: 75%;
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*justify-content: space-around;*/
+	box-sizing: border-box;
+	height: auto;
+}
+
+/* ----------------- Botones ------------------ */
+.botones{
+	float: left;
+	width: 100%;
+	text-align: left;
+	margin-left: 85px;
+	margin-top: 15px;
+}
+
+.botones > div {
+	float: left;
+	border: 1px solid;
+	padding: 7px;
+	color: #FFF;
+	background: #2999A5;
+}
+
+.esquina_l{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.esquina_r{
+	border-radius: 0px 20px 20px 0px;
+}
+
+/* ---------------- Lista de peliculas ------------------*/
+.contenedor {
+	width:25%;
+/*	display: block;
+*/	box-sizing:border-box;
+	margin-left: 2.5%;
+	/*float: left;*/
+	/*margin: 5px;*/
+	height: 240px;
+	margin-top: 2.5%;
+	overflow:visible;
+}
+.contenedor:hover > div > .descripcion{
+	width: 66.66666%;
+}
+.principal > div > div.contenedor > div{
+	width: 300%;
+	float: left;
+
+}
+
+.peliculas {
+	width: 33.333%;
+	float: left;
+	text-align: center;
+}
+
+
+.peliculas > img{
+	display: inline-block;
+	/*float: left;*/
+	height: 200px;
+}
+
+.titulo {
+	height: 38px;
+	overflow: hidden;
+	float: left;
+	width: 100%
+}
+.peliculas > h4{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+/* ------------ Descripción -----------*/
+.descripcion{
+	position: relative;
+	width: 0px;
+	float: left;
+	text-align: left;
+	overflow: hidden;
+	transition: 0.4s;
+	height: 200px;
+	background-color: #2999A5;
+	z-index: 10;
+}
+.descripcion_x{
+	float: right;
+	left:-100%;
+}
+
+
+.descripcion > div{
+	float: left;
+	width: 250px;
+	padding-left: 10px;
+}
+
+.genero{
+	color: blue;
+	cursor: pointer;
+}
+

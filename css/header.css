@@ -1,0 +1,159 @@
+
+body {
+    text-align: center;
+    margin: 0px;
+	overflow-y: scroll;
+}
+
+body * {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+    font-family: Arial;   
+}
+script{
+	display: none;
+}
+
+header{
+	width: 90%;
+    height: 200px;
+    background-color: #024A59;
+        
+}
+
+/* *********** Container *************** */
+
+header > div {
+	width: 33%;
+	height: 100%;
+	float: left;
+	overflow: visible;
+}
+
+/* ********************* Estrenos ******** */
+
+.premiere{
+	overflow: hidden;
+	height: 100%;
+	width: 150px;
+}
+
+.premiere > div {
+	width: 400%;
+	float: left;
+	position: relative;
+	left: 0px;
+	height: 100%;
+	animation-name: carusel;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+.premiere > div > div{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+
+.premiere > div > div > img{
+	height: 100%;
+	width: auto;
+
+}
+
+@keyframes carusel {
+	0%, 15% {
+		opacity: 1;
+
+		left: 0%;
+	}
+	25%, 40% {
+		opacity: 1;
+
+		left: -100%;
+	}
+	50%, 65% {
+		opacity: 1;
+
+		left: -200%;
+	}
+	80%, 99% {
+		opacity: 1;
+
+		left: -300%
+	}
+	100% {
+		opacity: 0;
+		left: 0%;
+	}
+}
+
+
+/* ********************* Centro ******** */
+
+header > div > img {
+	width: 80%;
+}
+
+header > div > h1 {
+	width: 80%;
+	position: relative;
+    top:-15%;
+    font-size: 2.5em; 
+    text-shadow: -3px -3px 20px white;
+    font-family: Calibri;
+}
+
+/* ******************** Login + Buscador ******** */
+
+.login{
+	margin-right: 2%;
+	margin-top: 2%;
+	top: -90%;
+	float: right;
+	color: #F8F9E9;
+}
+
+.login > div {
+	cursor: pointer;
+}
+
+.search{
+	top: 68% ;
+	width: 205px;
+	height: 30Px;
+	float: right;
+	position: relative;
+}
+
+.search > input {
+	height: 100%;
+	width: 55%;
+	float: right;
+	font-family: 'comics sans';
+	font-size: 1.2em;
+	font-style: italic;
+	transition: 0.5s;
+}
+.search > input:focus {
+	width:80%; 
+}
+
+.search > button {
+	height: 100%;
+	float: right;
+	border-radius: 0px 40px 40px 0px;
+	background: transparent;
+	padding-top: 1%; 
+
+}
+
+.search > button > img {
+	height: 90%;
+}
+
+:focus {
+	outline: none;
+}
